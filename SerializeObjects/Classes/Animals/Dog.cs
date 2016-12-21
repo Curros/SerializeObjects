@@ -15,6 +15,18 @@ namespace SerializeObjects.Classes
         private DateTime? _bithdate;
         private List<Dog> _descendats = new List<Dog>();
         private int? _pedigree;
+        public string Name
+        {
+            get
+            {
+                return _name;
+            }
+
+            set
+            {
+                _name = value;
+            }
+        }
 
         public DateTime? BirthDate
         {
@@ -29,18 +41,7 @@ namespace SerializeObjects.Classes
             }
         }
 
-        public string Name
-        {
-            get
-            {
-                return _name;
-            }
 
-            set
-            {
-                _name = value;
-            }
-        }
 
         public int? PedigreeNumber
         {

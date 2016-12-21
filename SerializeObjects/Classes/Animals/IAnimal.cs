@@ -9,9 +9,9 @@ namespace SerializeObjects.Classes
 {
     public interface IAnimal
     {
-        DateTime? BirthDate { get; set; }
-
         string Name { get; set; }
+
+        DateTime? BirthDate { get; set; }
 
         IList Desendants { get; }
 

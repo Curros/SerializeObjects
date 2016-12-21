@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Xml.Serialization;
 using Newtonsoft.Json;
+using SerializeObjects.Classes;
 
 namespace SerializeObjects.Extensions
 {
@@ -23,7 +24,7 @@ namespace SerializeObjects.Extensions
             //System.Diagnostics.Debug.WriteLine(typeof(T).Name);
             //System.Diagnostics.Debug.WriteLine(toSerialize.GetType().Name);
 
-            XmlSerializer xmlSerializer = new XmlSerializer(toSerialize.GetType());
+            XmlSerializer xmlSerializer = new XmlSerializer(typeof(T));
             StringWriter textWriter = new StringWriter();
             xmlSerializer.Serialize(textWriter, toSerialize);
             return textWriter.ToString();
