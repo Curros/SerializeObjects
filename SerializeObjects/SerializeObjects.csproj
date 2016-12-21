@@ -47,8 +47,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\IAnimal.cs" />
-    <Compile Include="Classes\Dog.cs" />
+    <Compile Include="Classes\Animals\IAnimal.cs" />
+    <Compile Include="Classes\Animals\Dog.cs" />
     <Compile Include="Extensions\Serialization.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
